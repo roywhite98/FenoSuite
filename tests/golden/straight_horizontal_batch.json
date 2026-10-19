@@ -1,0 +1,26 @@
+{
+  "name": "straight_horizontal_batch",
+  "batch_mode": true,
+  "selected_seeds": null,
+  "error": null,
+  "main_path": [
+    [
+      24,
+      14
+    ],
+    [
+      23,
+      82
+    ]
+  ],
+  "level1_edges": [
+    [
+      23,
+      82,
+      24,
+      14
+    ]
+  ],
+  "main_root_length": 68.41421356237309,
+  "n_components": 1
+}

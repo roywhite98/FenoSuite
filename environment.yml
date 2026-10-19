@@ -1,0 +1,12 @@
+# Conda 环境（可选）：避免 stringzilla 等包在 Windows 上从源码编译
+# 在仓库根目录执行: conda env create -f environment.yml
+name: plant_phenotype
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - -r requirements.txt

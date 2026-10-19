@@ -1,0 +1,54 @@
+# MobileSAM TinyViT 整图分割（空提示，无点/框/掩码）。源码已随仓库提供。
+# 把官方 mobile_sam.pt 的路径填到 model.checkpoint（已放在 weights/mobile_sam.pt，仅用于初始化训练）。
+# 图像分割用已微调权重 weights/seg_mobile_sam.pth（测试 Dice 0.6841），不要把它填进 checkpoint。
+# 训练输入为 512，模型内部缩放到 1024，显存占用高于 U-Net。
+
+experiment_name: root_mobile_sam
+
+data:
+  root_dir: ./workspace/datasets/data
+  images_dir: "images"
+  masks_dir: "masks"
+  mask_suffix: "_mask"
+  train_val_split: 0.8
+  image_ext: .tif
+  mask_ext: .png
+
+train:
+  epochs: 50
+  batch_size: 2
+  num_workers: 4
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  amp: true
+  save_dir: ./workspace/runs/mobile_sam
+  log_interval: 10
+  patch_size: [512, 512]
+  oversample_foreground: 1.0
+  undersample_background: 1.0
+  max_grad_norm: 12.0
+  lr_schedule: poly
+  poly_power: 0.8
+  early_stop_patience: 15
+  enable_augmentation: true
+  enable_visualization: true
+
+model:
+  name: mobile_sam
+  checkpoint: weights/mobile_sam.pt
+  encoder_size: 1024
+  in_channels: 3
+  classes: 1
+
+loss:
+  type: bce_dice
+  bce_weight: 0.5
+  dice_weight: 0.5
+  pos_weight: 3.0
+  use_weight_mask: false
+  foreground_weight: 3.0
+
+predict:
+  threshold: 0.5
+  remove_small_objects: 50
+  save_prob: false

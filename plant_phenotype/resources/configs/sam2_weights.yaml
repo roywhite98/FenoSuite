@@ -1,0 +1,8 @@
+# SAM2 ONNX 默认下载源（与 X-AnyLabeling v2.5 发布的 SAM2.1 Hiera Base+ 一致）
+# 缓存目录默认：~/.cache/plant_phenotype/sam2_onnx/
+# 可通过环境变量 PLANT_PHENO_SAM2_CACHE 覆盖缓存根目录下的 sam2_onnx 子目录
+
+encoder_url: https://github.com/CVHub520/X-AnyLabeling/releases/download/v2.5.0/sam2.1_hiera_base_plus.encoder.onnx
+decoder_url: https://github.com/CVHub520/X-AnyLabeling/releases/download/v2.5.0/sam2.1_hiera_base_plus.decoder.onnx
+encoder_filename: sam2.1_hiera_base_plus.encoder.onnx
+decoder_filename: sam2.1_hiera_base_plus.decoder.onnx

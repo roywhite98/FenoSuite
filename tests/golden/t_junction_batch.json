@@ -1,0 +1,56 @@
+{
+  "name": "t_junction_batch",
+  "batch_mode": true,
+  "selected_seeds": null,
+  "error": null,
+  "main_path": [
+    [
+      31,
+      51
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      33,
+      32
+    ],
+    [
+      32,
+      31
+    ],
+    [
+      32,
+      14
+    ]
+  ],
+  "level1_edges": [
+    [
+      31,
+      51,
+      32,
+      33
+    ],
+    [
+      32,
+      14,
+      32,
+      31
+    ],
+    [
+      32,
+      31,
+      33,
+      32
+    ],
+    [
+      32,
+      33,
+      33,
+      32
+    ]
+  ],
+  "main_root_length": 38.24264068711929,
+  "n_components": 1
+}

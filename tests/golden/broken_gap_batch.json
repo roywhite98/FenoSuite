@@ -1,0 +1,26 @@
+{
+  "name": "broken_gap_batch",
+  "batch_mode": true,
+  "selected_seeds": null,
+  "error": null,
+  "main_path": [
+    [
+      20,
+      10
+    ],
+    [
+      19,
+      90
+    ]
+  ],
+  "level1_edges": [
+    [
+      19,
+      90,
+      20,
+      10
+    ]
+  ],
+  "main_root_length": 81.24264068711928,
+  "n_components": 1
+}

@@ -1,0 +1,4 @@
+MobileSAM（TinyViT image encoder + SAM prompt encoder / mask decoder）。
+来源：https://github.com/ChaoningZhang/MobileSAM
+版权：Meta Platforms, Inc. and affiliates。许可证：Apache License 2.0。
+本目录供训练 model.name=mobile_sam 使用；官方权重 mobile_sam.pt 不包含在仓库中。

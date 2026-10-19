@@ -1,0 +1,47 @@
+# 植物表型分析软件 - 单项目依赖（训练/分割/标注/根系表型均已整合于本仓库，无需外部 SegmentTask、dataset-tool、rootmask）
+# 建议在虚拟环境中安装: python -m venv .venv && .venv\Scripts\activate && pip install -r requirements.txt
+#
+# 若报 stringzilla 编译错误：请使用 Python 3.10–3.12 创建虚拟环境，或安装 VC++ Build Tools
+
+# GUI 与图像
+PyQt6>=6.4.0
+Pillow>=9.0.0
+numpy>=1.21.0
+opencv-python>=4.5.0
+
+# SAM2 点提示标注（ONNX）；若需 GPU 可改为安装 onnxruntime-gpu 并卸载本包
+onnxruntime>=1.14.0
+
+# 深度学习（标注魔法棒、训练、分割）
+# 默认 pip install 可能为 CPU 版；若需 GPU，请先卸载再安装 CUDA 版，例如：
+#   pip uninstall torch torchvision -y
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# 诊断 CUDA 是否可用：python -m plant_phenotype.check_cuda
+torch>=2.0.0
+torchvision
+segmentation-models-pytorch
+albumentations
+PyYAML
+scikit-image
+scipy
+tqdm
+matplotlib
+seaborn
+tensorboard
+
+# timm 编码器
+timm
+
+# DINOv3 等：已移至 requirements-dinov3.txt，仅在使用 dinov3_mlp 模型时安装，可避免 stringzilla 编译问题
+# pip install -r requirements-dinov3.txt
+
+# 根系表型与导出
+networkx
+pandas
+openpyxl
+
+# SSH 远程训练客户端（服务器只需 Python + PyTorch，无需部署项目）
+paramiko>=2.11.0
+
+# HTTP 远端训练服务端（仅 server 需）
+flask>=2.0.0

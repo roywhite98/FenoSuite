@@ -1,0 +1,46 @@
+{
+  "name": "y_fork_batch",
+  "batch_mode": true,
+  "selected_seeds": null,
+  "error": null,
+  "main_path": [
+    [
+      14,
+      58
+    ],
+    [
+      36,
+      40
+    ],
+    [
+      37,
+      40
+    ],
+    [
+      68,
+      39
+    ]
+  ],
+  "level1_edges": [
+    [
+      14,
+      58,
+      36,
+      40
+    ],
+    [
+      36,
+      40,
+      37,
+      40
+    ],
+    [
+      37,
+      40,
+      68,
+      39
+    ]
+  ],
+  "main_root_length": 62.45584412271572,
+  "n_components": 1
+}

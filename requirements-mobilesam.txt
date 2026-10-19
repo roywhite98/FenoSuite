@@ -1,0 +1,3 @@
+# MobileSAM 源码已放在 plant_phenotype/vendor/mobile_sam（Apache-2.0），无需再 pip 安装。
+# 官方权重 mobile_sam.pt 需单独下载，路径写入 resources/configs/mobile_sam.yaml 的 model.checkpoint。
+# https://github.com/ChaoningZhang/MobileSAM

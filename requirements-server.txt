@@ -1,0 +1,19 @@
+# 仅远程训练服务端依赖（无需 PyQt6/GUI）
+# 在服务端目录执行: pip install -r requirements-server.txt
+# 若需 GPU：pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121 后再 pip install -r requirements-server.txt
+
+numpy>=1.21.0
+opencv-python>=4.5.0
+torch>=2.0.0
+torchvision
+segmentation-models-pytorch
+albumentations
+PyYAML
+scikit-image
+scipy
+tqdm
+matplotlib
+seaborn
+tensorboard
+timm
+flask>=2.0.0

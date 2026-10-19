@@ -1,0 +1,5 @@
+# 仅在使用 SegmentTask 的 dinov3_mlp 模型时安装
+# 若安装时报 stringzilla 编译错误：请使用 Python 3.10–3.12，或安装 Microsoft C++ Build Tools
+# https://visualstudio.microsoft.com/visual-cpp-build-tools/
+transformers
+accelerate

@@ -1,0 +1,56 @@
+{
+  "name": "main_with_lateral_batch",
+  "batch_mode": true,
+  "selected_seeds": null,
+  "error": null,
+  "main_path": [
+    [
+      10,
+      25
+    ],
+    [
+      35,
+      24
+    ],
+    [
+      36,
+      25
+    ],
+    [
+      37,
+      24
+    ],
+    [
+      60,
+      23
+    ]
+  ],
+  "level1_edges": [
+    [
+      10,
+      25,
+      35,
+      24
+    ],
+    [
+      35,
+      24,
+      36,
+      25
+    ],
+    [
+      36,
+      25,
+      37,
+      24
+    ],
+    [
+      37,
+      24,
+      60,
+      23
+    ]
+  ],
+  "main_root_length": 51.65685424949238,
+  "n_components": 1
+}

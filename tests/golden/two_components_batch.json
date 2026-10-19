@@ -1,0 +1,26 @@
+{
+  "name": "two_components_batch",
+  "batch_mode": true,
+  "selected_seeds": null,
+  "error": null,
+  "main_path": [
+    [
+      29,
+      38
+    ],
+    [
+      30,
+      12
+    ]
+  ],
+  "level1_edges": [
+    [
+      29,
+      38,
+      30,
+      12
+    ]
+  ],
+  "main_root_length": 26.414213562373096,
+  "n_components": 1
+}

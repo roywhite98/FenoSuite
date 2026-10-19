@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plant-phenotype"
+version = "0.1.0"
+description = "植物表型分析软件：数据标注、模型训练、图像分割、根系表型"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+plant-phenotype = "plant_phenotype.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["plant_phenotype*"]
+
+[tool.setuptools.package-data]
+plant_phenotype = ["resources/configs/*.yaml", "resources/icons/*"]
